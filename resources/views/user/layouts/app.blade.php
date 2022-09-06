@@ -50,9 +50,7 @@
     <link rel="stylesheet" href="{{asset('frontend-assets/assets/vendor/swiper/swiper-bundle.min.css')}}">
 
     <!-- Default CSS -->
-    @if(Route::is('home') )
     <link rel="stylesheet" type="text/css" href="{{asset('frontend-assets/assets/css/demo1.min.css')}}">
-    @endif
     <link rel="stylesheet" type="text/css" href="{{asset('frontend-assets/assets/css/style.min.css')}}">
 
 
