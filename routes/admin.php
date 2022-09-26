@@ -127,22 +127,22 @@ Route::get('/productdisscussion_reviewview', 'ProductDisscussionController@revie
 //Orders
 
 Route::get('order_allorder', 'OrderController@allorder')->name('order_allorder');
-Route::get('order_allorderdetails', 'OrderController@allorderdetails')->name('order_allorderdetails');
+Route::get('order_allorderdetails/{id}', 'OrderController@allorderdetails')->name('order_allorderdetails');
 Route::get('order_allorderinvoice', 'OrderController@allorderinvoice')->name('order_allorderinvoice');
-Route::get('order_allorderdelivery', 'OrderController@allorderdelivery')->name('order_allorderdelivery');
+Route::get('order_allorderdelivery/{id}', 'OrderController@allorderdelivery')->name('order_allorderdelivery');
 
 
 // Complete Orders
 
 Route::get('/order_complete_completedorder', 'OrderController@completedorder')->name('order_complete_completedorder');
-Route::get('order_complete_completeorderdetails', 'OrderController@completeorderdetails')->name('order_complete_completeorderdetails');
+Route::get('order_complete_completeorderdetails/{id}', 'OrderController@completeorderdetails')->name('order_complete_completeorderdetails');
 Route::get('order_complete_completeorderinvoice', 'OrderController@completeorderinvoice')->name('order_complete_completeorderinvoice');
 Route::get('order_complete_completeorderdelivery', 'OrderController@completeorderdelivery')->name('order_complete_completeorderdelivery');
 
 // pending Orders
 
 Route::get('/order_pending_pendingorder', 'OrderController@pendingorder')->name('order_pending_pendingorder');
-Route::get('order_pending_pendingorderdetails', 'OrderController@pendingorderdetails')->name('order_pending_pendingorderdetails');
+Route::get('order_pending_pendingorderdetails/{id}', 'OrderController@pendingorderdetails')->name('order_pending_pendingorderdetails');
 Route::get('order_pending_pendingorderinvoice', 'OrderController@pendingorderinvoice')->name('order_pending_pendingorderinvoice');
 Route::get('order_pending_pendingorderdelivery', 'OrderController@pendingorderdelivery')->name('order_pending_pendingorderdelivery');
 
@@ -151,7 +151,7 @@ Route::get('order_pending_pendingorderdelivery', 'OrderController@pendingorderde
 
 
 Route::get('/order_decline_declinedorder', 'OrderController@declineorder')->name('order_decline_declinedorder');
-Route::get('order_decline_declineorderdetails', 'OrderController@declineorderdetails')->name('order_decline_declineorderdetails');
+Route::get('order_decline_declineorderdetails/{id}', 'OrderController@declineorderdetails')->name('order_decline_declineorderdetails');
 Route::get('order_decline_declineorderinvoice', 'OrderController@declineorderinvoice')->name('order_decline_declineorderinvoice');
 Route::get('order_decline_declineorderdelivery', 'OrderController@declineorderdelivery')->name('order_decline_declineorderdelivery');
 
@@ -159,7 +159,7 @@ Route::get('order_decline_declineorderdelivery', 'OrderController@declineorderde
 
 
 Route::get('/order_processing_processingorder', 'OrderController@processingorder')->name('order_processing_processingorder');
-Route::get('order_processing_processingorderdetails', 'OrderController@processingorderdetails')->name('order_processing_processingorderdetails');
+Route::get('order_processing_processingorderdetails/{id}', 'OrderController@processingorderdetails')->name('order_processing_processingorderdetails');
 Route::get('order_processing_processingorderinvoice', 'OrderController@processingorderinvoice')->name('order_processing_processingorderinvoice');
 Route::get('order_processing_processingorderdelivery', 'OrderController@processingorderdelivery')->name('order_processing_processingorderdelivery');
 
