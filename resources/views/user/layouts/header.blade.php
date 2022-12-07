@@ -122,7 +122,7 @@ use Illuminate\Support\Facades\URL;
                   </a>
                   <div class="dropdown-box">
                      <ul class="menu vertical-menu category-menu">
-                        @foreach($shareData['categories'] as $category)
+                        @foreach($shareData['categories']->slice(0, 11) as $category)
                         <li>
                            <a href="{{ route('sortby',$category->id ) }}">
                            {{$category->name}}
