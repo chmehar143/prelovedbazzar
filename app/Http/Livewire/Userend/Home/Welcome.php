@@ -209,11 +209,11 @@ class Welcome extends Component
         //  ->select('products.updated_at', 'categories.*')
         //  ->get()->groupBy('id');
         $newarrivals = Product::whereBetween('created_at',
-        [Carbon::now()->subMonth()->startOfMonth(), Carbon::now()->today()])->where('status', 1)->with('discussions')->orderBy('created_at', 'desc')->skip(0)->take(10)->get();
+        [Carbon::now()->subMonth()->startOfMonth(), Carbon::now()->today()])->where('status', 1)->with('discussions')->orderBy('created_at', 'desc')->skip(0)->take(20)->get();
         
 
         $most_populars = Product::whereNotNull('admin_id')->whereBetween('updated_at',
-        [Carbon::now()->subMonth()->startOfMonth(), Carbon::now()->today()])->where('status', 1)->with('discussions')->skip(0)->take(10)->get();
+        [Carbon::now()->subMonth()->startOfMonth(), Carbon::now()->today()])->where('status', 1)->with('discussions')->skip(0)->take(20)->get();
 
 
         //front page top ctegory's product
