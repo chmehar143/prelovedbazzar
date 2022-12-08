@@ -18,8 +18,8 @@
                         data-bottom-top="transform: translateY(10vh);"
                         data-top-bottom="transform: translateY(-10vh);" width="474" height="397">
                   </figure> -->
-                  <div class="banner-content y-50 text-right">
-                     <h5 class="banner-subtitle font-weight-normal text-default ls-50 lh-1 mb-2 slide-animate"
+                  <!-- <div class="banner-content y-50" style="text-align: center;"> -->
+                     <!-- <h5 class="banner-subtitle font-weight-normal text-default ls-50 lh-1 mb-2 slide-animate"
                         data-animation-options="{
                         'name': 'fadeInRightShorter',
                         'duration': '1s',
@@ -41,15 +41,15 @@
                         'delay': '.6s'
                         }">
                         <span class="font-weight-bolder text-secondary">{{$banner->offer}}</span>
-                     </p>
+                     </p> 
                      <a href="{{$banner->url}}"
-                        class="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animate"
+                        class="btn btn-white btn-rounded btn-icon-bottom slide-animate"
                         data-animation-options="{
                         'name': 'fadeInRightShorter',
                         'duration': '1s',
                         'delay': '.8s'
                         }">SHOP NOW<i class="w-icon-long-arrow-right"></i></a>
-                  </div>
+                  </div>-->
                   <!-- End of .banner-content -->
                </div>
                <!-- End of .container -->
@@ -101,10 +101,10 @@
                      SHOP NOW<i class="w-icon-long-arrow-right"></i>
                      </a>
                   </div>
-                  <!-- End of .banner-content -->
-               </div>
+                End of .banner-content -->
+               <!-- </div> -->
                <!-- End of .container -->
-            </div> -->
+            <!-- </div> -->
             <!-- End of .intro-slide2 -->
             <!-- <div class="swiper-slide banner banner-fixed intro-slide intro-slide3"
                style="background-image: url({{asset('frontend-assets/assets/images/demos/demo1/sliders/slide-3.jpg')}}); background-color: #f0f1f2;">
@@ -150,16 +150,14 @@
                            class="btn btn-dark btn-outline btn-rounded btn-icon-right">SHOP
                         NOW<i class="w-icon-long-arrow-right"></i></a>
                      </div>
-                     <!-- End of .banner-content -->
                   </div>
-                  <!-- End of .container -->
                </div>
             </div> -->
             <!-- End of .intro-slide3 -->
          </div>
          <div class="swiper-pagination"></div>
-         <button class="swiper-button-next"></button>
-         <button class="swiper-button-prev"></button>
+         <button class="swiper-button-next" style="visibility: hidden;"></button>
+         <button class="swiper-button-prev" style="visibility: hidden;"></button>
       </div>
       <!-- End of .swiper-container -->
    </section>
